@@ -26,7 +26,7 @@ namespace ConsoleApp1
 
                 else if (realNumber < 1 || realNumber > 100)
                 {
-                    Console.WriteLine("{0}, Your Entry of {1} is Invalid.Please Enter a Positive Number Between 1 and 100", userName, userNumber);
+                    Console.WriteLine("{0}, Your Entry of {1} is Invalid. Please Enter a Positive Number Between 1 and 100", userName, userNumber);
                     continue;
                 }
                 else
@@ -51,11 +51,11 @@ namespace ConsoleApp1
                         Console.WriteLine("Even.");
                         stillPlaying = false;
                     }
-                    Console.WriteLine("Would You Like To Play Again?");
+                    Console.WriteLine("Would You Like To Play Again? (Yes/No) ");
 
                     string userBored = Console.ReadLine();
 
-                    if (userBored.Equals("yes", StringComparison.OrdinalIgnoreCase))
+                    if (userBored.Equals("yes", StringComparison.OrdinalIgnoreCase) || userBored.Equals("y", StringComparison.OrdinalIgnoreCase))
                     {
                         stillPlaying = true;
                         continue;
